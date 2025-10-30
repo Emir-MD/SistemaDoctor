@@ -1,0 +1,163 @@
+/* Fondo global */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  font-family: sans-serif;
+}
+
+/* Contenedor centrado */
+.login-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Tarjeta de login */
+#form {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 420px;
+  min-height: 520px;
+  padding: 30px;
+  background-color: #161616;
+  box-shadow: 0px 0px 40px #00bfff;
+  outline: 1px solid #007acc;
+  border-radius: 12px;
+  position: relative;
+}
+
+#form-body {
+  width: 100%;
+  padding: 0 10px;
+}
+
+#welcome-lines {
+  text-align: center;
+  line-height: 1;
+}
+
+#welcome-line-1 {
+  color: #00bfff;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#welcome-line-2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+#input-area {
+  margin-top: 40px;
+}
+
+.form-inp {
+  padding: 11px 25px;
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.form-inp input {
+  width: 100%;
+  background: none;
+  font-size: 14px;
+  color: #00bfff;
+  border: none;
+  padding: 0;
+}
+
+.form-inp input:focus {
+  outline: none;
+}
+
+#submit-button-cvr {
+  margin-top: 20px;
+}
+
+#forgot-pass {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#forgot-pass a {
+  color: #868686;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+#bar {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  width: 28px;
+  height: 8px;
+  margin-left: -33px;
+  background-color: #00bfff;
+  border-radius: 10px;
+}
+
+#bar:before,
+#bar:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ececec;
+  border-radius: 50%;
+}
+
+#bar:before {
+  right: -20px;
+}
+
+#bar:after {
+  right: -38px;
+}
+
+/* === BOTÓN START AZUL ESTILO UIVERSE === */
+.button {
+  --main-color: rgb(0, 191, 255);
+  --main-bg-color: rgba(0, 191, 255, 0.3);
+  --pattern-color: rgba(0, 191, 255, 0.07);
+  filter: hue-rotate(0deg);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background: radial-gradient(circle, var(--main-bg-color) 0%, rgba(0, 0, 0, 0) 95%),
+              linear-gradient(var(--pattern-color) 1px, transparent 1px),
+              linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
+  background-size: cover, 15px 15px, 15px 15px;
+  background-position: center center, center center, center center;
+  border-image: radial-gradient(circle, var(--main-color) 0%, rgba(0, 0, 0, 0) 100%) 1;
+  border-width: 1px 0 1px 0;
+  color: var(--main-color);
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-size: cover, 10px 10px, 10px 10px;
+}
+
+.button:active {
+  filter: hue-rotate(120deg);
+}
